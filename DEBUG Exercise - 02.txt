@@ -30,3 +30,7 @@ start
    endwhile
    output "End of job"
 stop
+
+Changed DEDUCTION from string to num
+
+Switched the if statement to be inside the while loop
