@@ -34,3 +34,7 @@ return
 finishUp()
    output "End of program"
 return
+
+fixed the variable mtgPayment to be mortgagePayment
+
+fixed MainLoop() to reflect same as rest of code as mainLoop()
