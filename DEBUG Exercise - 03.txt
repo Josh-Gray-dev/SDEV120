@@ -23,3 +23,9 @@ start
       input firstTest
    endwhile
 stop
+
+fixed the order of operations for the averagea variable
+
+fixed the output typo
+
+initialized firstTEst before the start of the loop
