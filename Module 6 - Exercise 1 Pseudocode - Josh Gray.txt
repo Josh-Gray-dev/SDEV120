@@ -1,0 +1,46 @@
+Start
+ Declarations
+  num baseFee = 5
+  num taxRate = 0.14
+  string customerName
+  num phoneNumber
+  num textMessages
+  num extraCharge
+
+ while customerName != "ZZZ" then
+  output("Enter customer's name, or enter ZZZ to proceed to processing")
+  input customerName
+
+  output("Enter 7 digit phone number")
+  input phoneNumber
+
+  output("Enter number of text messages sent")
+  input textMessages
+ end while
+
+ function calculateBill()
+  if textMessages > 100 AND textMessages <300 then
+   extraCharge = (textMessages - 100) * 0.03
+ 
+  else if textMessages > 300 then
+   extraCharge = (200 * 0.03) + ((textMessages - 300) * 0.02)
+  end if
+
+  beforeTax = baseFee + extraCharge
+  taxAmount = beforeTax * taxRate
+  billTotal = beforeTax + taxAmount
+ end function
+
+ function displayResults()
+  output("Customer Name: ", + customerName)
+  output("Phone Number: ", + phoneNumber)
+  output("Text Messages Sent: ", + textMessages)
+  output("Total Bill: ", + billTotal)
+ end function
+End
+
+
+
+
+
+
